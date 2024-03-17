@@ -3,12 +3,12 @@ layout: default
 title: FinOps toolkit - Kick start your FinOps efforts
 nav_order: 1
 nav_exclude: false
-description: 'Automate and extend the Microsoft Cloud with starter kits, scripts, and advanced solutions to accelerate your FinOps journey.'
+description: 'Automate and extend the Microsoft Cloud with tools and resources to accelerate your FinOps journey.'
 permalink: /
 ---
 
 <span class="fs-9 d-block mb-4">Kick start your FinOps efforts</span>
-Automate and extend the Microsoft Cloud with starter kits, scripts, and advanced solutions to accelerate your FinOps journey.
+Automate and extend the Microsoft Cloud with tools and resources to accelerate your FinOps journey.
 {: .fs-6 .fw-300 }
 
 [Get the tools](#-available-tools){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-4 }
@@ -17,7 +17,7 @@ Automate and extend the Microsoft Cloud with starter kits, scripts, and advanced
 
 ---
 
-The Microsoft FinOps toolkit is an open-source collection of learning resources and customizable tools to help you adopt and implement FinOps capabilities that automate and extend the Microsoft Cloud. This includes:
+The Microsoft FinOps toolkit is an open-source collection of customizable tools and learning resources to help you adopt and implement FinOps capabilities that automate and extend the Microsoft Cloud. This includes:
 
 - Starter kits that help you get up and running.
 - Automation scripts to streamline cost configuration and management at scale.
