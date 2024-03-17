@@ -2,7 +2,7 @@
 layout: default
 title: FinOps toolkit - Kick start your FinOps efforts
 nav_order: 1
-nav_exclude: true
+nav_exclude: false
 description: 'Automate and extend the Microsoft Cloud with starter kits, scripts, and advanced solutions to accelerate your FinOps journey.'
 permalink: /
 ---
