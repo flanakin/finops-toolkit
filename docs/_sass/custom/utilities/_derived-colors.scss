@@ -1,0 +1,603 @@
+// // Colors
+
+$text: var(--theme-text);
+$text-subtle: var(--theme-text-subtle);
+// $text-invert: var(--theme-text-invert);
+// $text-glow-high-contrast: var(--theme-text-glow-high-contrast);
+$box-shadow-color-light: var(--theme-box-shadow-light);
+$box-shadow-color-medium: var(--theme-box-shadow-medium);
+// $box-shadow-color-heavy: var(--theme-box-shadow-heavy);
+// $box-shadow-color-extra-heavy: var(--theme-box-shadow-extra-heavy);
+// $body-background: var(--theme-body-background);
+$body-background-medium: var(--theme-body-background-medium);
+// $body-background-dark: var(--theme-body-background-dark);
+// $overlay: var(--theme-overlay);
+// $overlay-invert: var(--theme-overlay-invert);
+// $overlay-static: $palette-black-opacity-50;
+$border: var(--theme-border);
+
+// $default-hover: var(--theme-hover-base);
+// $default-hover-invert: var(--theme-hover-invert);
+$border-white-high-contrast: var(--theme-border-white-high-contrast);
+// $border-yellow-high-contrast: var(--theme-border-yellow-high-contrast);
+// $code-highlight-background: var(--theme-code-highlight-background);
+// $visited: var(--theme-visited);
+
+// $score-low-off: var(--theme-score-low-off);
+// $score-low: var(--theme-score-low);
+// $score-medium-off: var(--theme-score-medium-off);
+// $score-medium: var(--theme-score-medium);
+// $score-high-off: var(--theme-score-high-off);
+// $score-high: var(--theme-score-high);
+
+// $primary: var(--theme-primary-base);
+// $primary-background: var(--theme-primary-background);
+// $primary-background-glow-high-contrast: var(--theme-primary-background-glow-high-contrast);
+// $primary-dark: var(--theme-primary-dark);
+// $primary-hover: var(--theme-primary-hover);
+// $primary-active: var(--theme-primary-active);
+// $primary-invert: var(--theme-primary-invert);
+// $primary-box-shadow: var(--theme-primary-box-shadow);
+
+// $secondary: var(--theme-secondary-base);
+// $secondary-background: var(--theme-secondary-background);
+// $secondary-background-glow-high-contrast: var(--theme-secondary-background-glow-high-contrast);
+// $secondary-dark: var(--theme-secondary-dark);
+// $secondary-hover: var(--theme-secondary-hover);
+// $secondary-active: var(--theme-secondary-active);
+// $secondary-invert: var(--theme-secondary-invert);
+// $secondary-box-shadow: var(--theme-secondary-box-shadow);
+
+// $tertiary: var(--theme-tertiary-base);
+// $tertiary-background: var(--theme-tertiary-background);
+// $tertiary-background-glow-high-contrast: var(--theme-tertiary-background-glow-high-contrast);
+// $tertiary-dark: var(--theme-tertiary-dark);
+// $tertiary-hover: var(--theme-tertiary-hover);
+// $tertiary-active: var(--theme-tertiary-active);
+// $tertiary-invert: var(--theme-tertiary-invert);
+// $tertiary-box-shadow: var(--theme-tertiary-box-shadow);
+
+// $success: var(--theme-success-base);
+// $success-background: var(--theme-success-background);
+// $success-background-glow-high-contrast: var(--theme-success-background-glow-high-contrast);
+// $success-dark: var(--theme-success-dark);
+// $success-hover: var(--theme-success-hover);
+// $success-active: var(--theme-success-active);
+// $success-invert: var(--theme-success-invert);
+// $success-box-shadow: var(--theme-success-box-shadow);
+
+// $info: var(--theme-info-base);
+// $info-background: var(--theme-info-background);
+// $info-background-glow-high-contrast: var(--theme-info-background-glow-high-contrast);
+// $info-dark: var(--theme-info-dark);
+// $info-hover: var(--theme-info-hover);
+// $info-active: var(--theme-info-active);
+// $info-invert: var(--theme-info-invert);
+// $info-box-shadow: var(--theme-info-box-shadow);
+// $inline-code: var(--theme-inline-code);
+
+// $warning: var(--theme-warning-base);
+// $warning-background: var(--theme-warning-background);
+// $warning-background-glow-high-contrast: var(--theme-warning-background-glow-high-contrast);
+// $warning-dark: var(--theme-warning-dark);
+// $warning-hover: var(--theme-warning-hover);
+// $warning-active: var(--theme-warning-active);
+// $warning-invert: var(--theme-warning-invert);
+// $warning-box-shadow: var(--theme-warning-box-shadow);
+
+// $danger: var(--theme-danger-base);
+// $danger-background: var(--theme-danger-background);
+// $danger-background-glow-high-contrast: var(--theme-danger-background-glow-high-contrast);
+// $danger-dark: var(--theme-danger-dark);
+// $danger-hover: var(--theme-danger-hover);
+// $danger-active: var(--theme-danger-active);
+// $danger-invert: var(--theme-danger-invert);
+// $danger-box-shadow: var(--theme-danger-box-shadow);
+
+// // Facepile colors
+// $facepile-red: var(--theme-facepile-red);
+// $facepile-teal: var(--theme-facepile-teal);
+// $facepile-blue: var(--theme-facepile-blue);
+
+// // Universal variables - related to styles that appear is several places. Do not add static colors, please.
+
+// $code-header-color: $text;
+
+// $white-static: $palette-white;
+// $black-static: $palette-black;
+
+// $primary-static: $palette-blue-60;
+// $primary-hover-static: $palette-blue-70;
+// $primary-active-static: $palette-blue-80;
+
+// // Brand colors
+// // Must be hex values
+
+// $azure-static: #005ba1;
+// $azure-card-static: #0078d4;
+// $azure-invert: $white-static;
+
+// $bash-static: $black-static;
+// $bash-invert: $white-static;
+
+// $bizapps-static: $black-static; // ToDo: Remove after power-platform learn shared page is updated
+// $bizapps-invert: $white-static;
+
+// $bot-framework-static: #e3008c;
+// $bot-framework-invert: $white-static;
+
+// $docs-static: #243a5e;
+// $docs-invert: $white-static;
+// $docs-focus-static: #50e6ff;
+
+// $dotnet-static: #512bd4;
+// $dotnet-card-static: $dotnet-static;
+// $dotnet-invert: $white-static;
+
+// // out of order due to dotnet dependency
+// $aspnet-static: $dotnet-static;
+// $aspnet-card-static: $dotnet-static;
+// $aspnet-invert: $white-static;
+
+// $dynamics-static: #002050;
+// $dynamics-card-static: #008272;
+// $dynamics-invert: $white-static;
+
+// $enterprise-mobility-security-static: #107c10;
+// $enterprise-mobility-security-invert: $white-static;
+
+// $fabric-static: #117865;
+// $fabric-invert: $white-static;
+
+// $flipgrid-static: #00d809;
+// $flipgrid-invert: $black-static;
+
+// $gaming-static: #107c10;
+// $gaming-invert: $white-static;
+
+// $github-static: #24292e;
+// $github-invert: $white-static;
+
+// $javascript-static: #1e552e;
+// $javascript-invert: $white-static;
+
+// $m365-static: #0078d4;
+// $m365-invert: $white-static;
+
+// $makecode-static: #aa278f;
+// $makecode-invert: $white-static;
+
+// $microsoft-edge-static: #50e6ff;
+// $microsoft-edge-invert: $black-static;
+
+// $microsoft-education-static: #32145a;
+// $microsoft-education-invert: $white-static;
+
+// $microsoft-graph-static: #107c10;
+// $microsoft-graph-card-static: #0078d4;
+// $microsoft-graph-invert: $white-static;
+
+// $microsoft-quantum-static: #0078d4;
+// $microsoft-quantum-invert: $white-static;
+
+// $minecraft-static: #34aa2f;
+// $minecraft-invert: $black-static;
+
+// $nuget-static: #004880;
+// $nuget-invert: $white-static;
+
+// $collection-static: #053986;
+// $collection-invert: $white-static;
+
+// $challenge-static: #271e6d;
+// $challenge-invert: $white-static;
+
+// $office-static: #d83b01;
+// $office-invert: $white-static;
+
+// $office-365-static: #d83b01;
+// $office-365-invert: $white-static;
+
+// $playfab-static: #ff6d21;
+// $playfab-invert: $black-static;
+
+// $power-apps-static: #742774;
+// $power-apps-invert: $white-static;
+
+// $power-automate-static: #0066ff;
+// $power-automate-invert: $white-static;
+
+// $power-bi-static: #f2c811;
+// $power-bi-invert: $black-static;
+
+// $power-pages-static: #4b44c1;
+// $power-pages-invert: $white-static;
+
+// $power-platform-static: $black-static;
+// $power-platform-card-static: #3c3c41;
+// $power-platform-invert: $white-static;
+
+// $power-virtual-agents-static: #0b556a;
+// $power-virtual-agents-invert: $white-static;
+
+// $powershell-static: #012456;
+// $powershell-invert: $white-static;
+
+// $project-static: #31752f;
+// $project-invert: $white-static;
+
+// $sales-copilot-static: #335ccc;
+// $sales-copilot-invert: $white-static;
+
+// $semantic-kernel-static: #aa0055;
+// $semantic-kernel-invert: $white-static;
+
+// $sharepoint-static: #03787c;
+// $sharepoint-invert: $white-static;
+
+// $sql-static: $docs-static;
+// $sql-card-static: #0078d4;
+// $sql-invert: $white-static;
+
+// $surface-static: #737373;
+// $surface-invert: $white-static;
+
+// $sway-static: #038387;
+// $sway-invert: $white-static;
+
+// $system-center-static: #002050;
+// $system-center-invert: $white-static;
+
+// $teams-static: #4b53bc;
+// $teams-invert: $white-static;
+
+// $visual-studio-static: #5c2d91;
+// $visual-studio-invert: $white-static;
+
+// $windows-static: #0078d4;
+// $windows-card-static: #0078d4;
+// $windows-invert: $white-static;
+
+// $workplace-analytics-static: #5b95a5;
+// $workplace-analytics-invert: $black-static;
+
+// $xamarin-static: #3498db;
+// $xamarin-invert: $black-static;
+
+// $xbox-static: #008575;
+// $xbox-invert: $white-static;
+
+// // Background image colors
+
+// $purple-hero-background: $palette-purple-80;
+
+// // For use in loops
+
+// $brand-colors: (
+// 	'aspnet': (
+// 		$aspnet-static,
+// 		$aspnet-card-static,
+// 		$aspnet-invert
+// 	),
+// 	'azure': (
+// 		$azure-static,
+// 		$azure-card-static,
+// 		$azure-invert
+// 	),
+// 	'bash': (
+// 		$bash-static,
+// 		$bash-static,
+// 		$bash-invert
+// 	),
+// 	'bizapps': (
+// 		$bizapps-static,
+// 		$bizapps-static,
+// 		$bizapps-invert
+// 	),
+// 	'bot-framework': (
+// 		$bot-framework-static,
+// 		$bot-framework-static,
+// 		$bot-framework-invert
+// 	),
+// 	'collection': (
+// 		$collection-static,
+// 		$collection-static,
+// 		$collection-invert
+// 	),
+// 	'challenge': (
+// 		$challenge-static,
+// 		$challenge-static,
+// 		$challenge-invert
+// 	),
+// 	'dotnet': (
+// 		$dotnet-static,
+// 		$dotnet-card-static,
+// 		$dotnet-invert
+// 	),
+// 	'docs': (
+// 		$docs-static,
+// 		$docs-static,
+// 		$docs-invert
+// 	),
+// 	'dynamics': (
+// 		$dynamics-static,
+// 		$dynamics-card-static,
+// 		$dynamics-invert
+// 	),
+// 	'microsoft-edge': (
+// 		$microsoft-edge-static,
+// 		$microsoft-edge-static,
+// 		$microsoft-edge-invert
+// 	),
+// 	'microsoft-education': (
+// 		$microsoft-education-static,
+// 		$microsoft-education-static,
+// 		$microsoft-education-invert
+// 	),
+// 	'enterprise-mobility-security': (
+// 		$enterprise-mobility-security-static,
+// 		$enterprise-mobility-security-static,
+// 		$enterprise-mobility-security-invert
+// 	),
+// 	'fabric': (
+// 		$fabric-static,
+// 		$fabric-static,
+// 		$fabric-invert
+// 	),
+// 	'flipgrid': (
+// 		$flipgrid-static,
+// 		$flipgrid-static,
+// 		$flipgrid-invert
+// 	),
+// 	'gaming': (
+// 		$gaming-static,
+// 		$gaming-static,
+// 		$gaming-invert
+// 	),
+// 	'github': (
+// 		$github-static,
+// 		$github-static,
+// 		$github-invert
+// 	),
+// 	'graph': (
+// 		$microsoft-graph-static,
+// 		$microsoft-graph-card-static,
+// 		$microsoft-graph-invert
+// 	),
+// 	'javascript': (
+// 		$javascript-static,
+// 		$javascript-static,
+// 		$javascript-invert
+// 	),
+// 	'm365': (
+// 		$m365-static,
+// 		$m365-static,
+// 		$m365-invert
+// 	),
+// 	'makecode': (
+// 		$makecode-static,
+// 		$makecode-static,
+// 		$makecode-invert
+// 	),
+// 	'minecraft': (
+// 		$minecraft-static,
+// 		$minecraft-static,
+// 		$minecraft-invert
+// 	),
+// 	'nuget': (
+// 		$nuget-static,
+// 		$nuget-static,
+// 		$nuget-invert
+// 	),
+// 	'office': (
+// 		$office-static,
+// 		$office-static,
+// 		$office-invert
+// 	),
+// 	'office-365': (
+// 		$office-365-static,
+// 		$office-365-static,
+// 		$office-365-invert
+// 	),
+// 	'playfab': (
+// 		$playfab-static,
+// 		$playfab-static,
+// 		$playfab-invert
+// 	),
+// 	'power-apps': (
+// 		$power-apps-static,
+// 		$power-apps-static,
+// 		$power-apps-invert
+// 	),
+// 	'power-automate': (
+// 		$power-automate-static,
+// 		$power-automate-static,
+// 		$power-automate-invert
+// 	),
+// 	'power-bi': (
+// 		$power-bi-static,
+// 		$power-bi-static,
+// 		$power-bi-invert
+// 	),
+// 	'power-pages': (
+// 		$power-pages-static,
+// 		$power-pages-static,
+// 		$power-pages-invert
+// 	),
+// 	'power-platform': (
+// 		$power-platform-static,
+// 		$power-platform-card-static,
+// 		$power-platform-invert
+// 	),
+// 	'power-virtual-agents': (
+// 		$power-virtual-agents-static,
+// 		$power-virtual-agents-static,
+// 		$power-virtual-agents-invert
+// 	),
+// 	'powershell': (
+// 		$powershell-static,
+// 		$powershell-static,
+// 		$powershell-invert
+// 	),
+// 	'project': (
+// 		$project-static,
+// 		$project-static,
+// 		$project-invert
+// 	),
+// 	'sales-copilot': (
+// 		$sales-copilot-static,
+// 		$sales-copilot-static,
+// 		$sales-copilot-invert
+// 	),
+// 	'semantic-kernel': (
+// 		$semantic-kernel-static,
+// 		$semantic-kernel-static,
+// 		$semantic-kernel-invert
+// 	),
+// 	'sharepoint': (
+// 		$sharepoint-static,
+// 		$sharepoint-static,
+// 		$sharepoint-invert
+// 	),
+// 	'sql': (
+// 		$sql-static,
+// 		$sql-card-static,
+// 		$sql-invert
+// 	),
+// 	'surface': (
+// 		$surface-static,
+// 		$surface-static,
+// 		$surface-invert
+// 	),
+// 	'sway': (
+// 		$sway-static,
+// 		$sway-static,
+// 		$sway-invert
+// 	),
+// 	'system-center': (
+// 		$system-center-static,
+// 		$system-center-static,
+// 		$system-center-invert
+// 	),
+// 	'teams': (
+// 		$teams-static,
+// 		$teams-static,
+// 		$teams-invert
+// 	),
+// 	'visual-studio': (
+// 		$visual-studio-static,
+// 		$visual-studio-static,
+// 		$visual-studio-invert
+// 	),
+// 	'windows': (
+// 		$windows-static,
+// 		$windows-card-static,
+// 		$windows-invert
+// 	),
+// 	'workplace-analytics': (
+// 		$workplace-analytics-static,
+// 		$workplace-analytics-static,
+// 		$workplace-analytics-invert
+// 	),
+// 	'xamarin': (
+// 		$xamarin-static,
+// 		$xamarin-static,
+// 		$xamarin-invert
+// 	),
+// 	'xbox': (
+// 		$xbox-static,
+// 		$xbox-static,
+// 		$xbox-invert
+// 	)
+// ) !default;
+
+// // Docs colors
+
+// $framework-colors: (
+// 	'primary': (
+// 		$primary,
+// 		$primary-background,
+// 		$primary-dark,
+// 		$primary-hover,
+// 		$primary-active,
+// 		$primary-invert,
+// 		$primary-box-shadow,
+// 		$primary-background-glow-high-contrast
+// 	),
+// 	'secondary': (
+// 		$secondary,
+// 		$secondary-background,
+// 		$secondary-dark,
+// 		$secondary-hover,
+// 		$secondary-active,
+// 		$secondary-invert,
+// 		$secondary-box-shadow,
+// 		$secondary-background-glow-high-contrast
+// 	),
+// 	'tertiary': (
+// 		$tertiary,
+// 		$tertiary-background,
+// 		$tertiary-dark,
+// 		$tertiary-hover,
+// 		$tertiary-active,
+// 		$tertiary-invert,
+// 		$tertiary-box-shadow,
+// 		$tertiary-background-glow-high-contrast
+// 	),
+// 	'success': (
+// 		$success,
+// 		$success-background,
+// 		$success-dark,
+// 		$success-hover,
+// 		$success-active,
+// 		$success-invert,
+// 		$success-box-shadow,
+// 		$success-background-glow-high-contrast
+// 	),
+// 	'info': (
+// 		$info,
+// 		$info-background,
+// 		$info-dark,
+// 		$info-hover,
+// 		$info-active,
+// 		$info-invert,
+// 		$info-box-shadow,
+// 		$info-background-glow-high-contrast
+// 	),
+// 	'warning': (
+// 		$warning,
+// 		$warning-background,
+// 		$warning-dark,
+// 		$warning-hover,
+// 		$warning-active,
+// 		$warning-invert,
+// 		$warning-box-shadow,
+// 		$warning-background-glow-high-contrast
+// 	),
+// 	'danger': (
+// 		$danger,
+// 		$danger-background,
+// 		$danger-dark,
+// 		$danger-hover,
+// 		$danger-active,
+// 		$danger-invert,
+// 		$danger-box-shadow,
+// 		$danger-background-glow-high-contrast
+// 	)
+// ) !default;
+
+// // Combined framework and brand colors for the array used in all the loops
+
+// $colors: $framework-colors;
+
+// // example implementation of a color loop
+
+// // @each $name, $color-set in $framework-colors {
+// // 	$base: nth($color-set, $effect-index-base);
+// // 	$background: nth($color-set, $effect-index-background);
+// // 	$heavy: nth($color-set, $effect-index-dark);
+// // 	$hover: nth($color-set, $effect-index-hover);
+// // 	$active: nth($color-set, $effect-index-active);
+// // 	$invert: nth($color-set, $effect-index-invert);
+// // 	$box-shadow: nth($color-set, $effect-index-box-shadow);
+// //}

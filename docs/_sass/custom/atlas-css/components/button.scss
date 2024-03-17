@@ -1,0 +1,241 @@
+// @use 'sass:map';
+
+$button-color: $text !default;
+$button-background-color: $body-background !default;
+
+$button-lg-font-size: $font-size-6 !default;
+$button-sm-font-size: $font-size-8 !default;
+
+$button-icon-font-size: 0.875em !default;
+
+$button-border-color: $text-subtle !default;
+$button-border-width: $control-border-width !default;
+$button-border-radius: $control-radius !default;
+
+$button-padding-vertical: calc(0.375em - #{$button-border-width}) !default;
+$button-padding-horizontal: 0.75em !default;
+
+$button-hover-color: $text !default;
+$button-hover-border-color: $default-hover !default;
+$button-hover-background-color: $default-hover-invert !default;
+
+$button-disabled-background-color: $body-background-medium !default;
+$button-disabled-shadow: none !default;
+$button-disabled-opacity: 0.5 !default;
+
+$button-icon-spacing: 0.375em !default;
+$button-font-weight: $weight-semibold !default;
+
+// .button {
+//   @include control;
+//   @include unselectable;
+
+//   justify-content: center;
+//   padding-block-start: $button-padding-vertical;
+//   padding-block-end: $button-padding-vertical;
+//   border-width: $button-border-width;
+//   border-radius: $button-border-radius;
+//   border-color: $button-border-color;
+//   background-color: $button-background-color;
+//   color: $button-color;
+//   font-weight: $button-font-weight;
+//   text-align: center;
+//   text-decoration: none;
+//   cursor: pointer;
+//   padding-inline-start: $button-padding-horizontal;
+//   padding-inline-end: $button-padding-horizontal;
+
+//   strong {
+//     color: inherit;
+//   }
+
+//   .icon {
+//     font-size: $button-icon-font-size;
+
+//     &:only-child {
+//       margin: 0;
+//     }
+
+//     &:first-child:not(:only-child) {
+//       margin-inline-end: $button-icon-spacing;
+//     }
+
+//     &:last-child:not(:only-child) {
+//       margin-inline-start: $button-icon-spacing;
+//     }
+//   }
+
+//   &:hover,
+//   &.is-hovered {
+//     border-color: $button-hover-border-color;
+//     background-color: $button-hover-background-color;
+//     color: $button-hover-color;
+//   }
+
+//   &:visited {
+//     color: $button-color;
+//   }
+
+//   // Sizes
+
+//   &.button-sm {
+//     font-size: $button-sm-font-size;
+//   }
+
+//   &.button-lg {
+//     font-size: $button-lg-font-size;
+//   }
+
+//   // Modifiers
+
+//   &.is-disabled,
+//   &[disabled] {
+//     border-color: currentColor;
+//     background-color: $button-disabled-background-color;
+//     opacity: $button-disabled-opacity;
+//     box-shadow: $button-disabled-shadow;
+//   }
+
+//   &.button-block {
+//     display: flex;
+//     width: 100%;
+//   }
+
+//   &.is-loading {
+//     color: transparent !important;
+//     pointer-events: none;
+
+//     &::after {
+//       @include loader;
+//       @include center(1em);
+
+//       position: absolute !important;
+//       border-block-end-color: $text;
+//       border-inline-start-color: $text;
+//     }
+//   }
+
+//   @each $name, $color-set in $colors {
+//     $base: nth($color-set, $color-index-base);
+//     $dark: nth($color-set, $color-index-dark);
+//     $background: nth($color-set, $color-index-background);
+
+//     &.button-#{$name} {
+//       @if $name == 'warning' {
+//         border-color: $dark;
+//         color: $dark;
+//       } @else {
+//         border-color: $base;
+//         color: $base;
+//       }
+
+//       &:hover,
+//       &.is-hovered {
+//         background-color: $background;
+//         color: $dark;
+//       }
+
+//       &.is-loading::after {
+//         border-color: transparent transparent $base $base !important;
+//       }
+//     }
+//   }
+// }
+
+// $button-clear-hover-background-color: transparentize(#8e8e8e, 0.95) !default;
+
+// .button.button-clear {
+//   border-color: transparent;
+//   background-color: transparent;
+
+//   &.border {
+//     // an allowed hack to make for flexible outlined buttons
+//     // does not support loading states
+//     border-color: currentColor !important;
+//   }
+
+//   &,
+//   &:visited {
+//     color: currentColor;
+//   }
+
+//   &.is-hovered,
+//   &:hover,
+//   &:active {
+//     background-color: $button-clear-hover-background-color;
+//   }
+
+//   @each $name, $color-set in $colors {
+//     $base: nth($color-set, $color-index-base);
+//     $dark: nth($color-set, $color-index-dark);
+//     $background: nth($color-set, $color-index-background);
+
+//     &.button-#{$name} {
+//       color: $base;
+//       @if $name == 'warning' {
+//         color: $dark;
+//       }
+
+//       &:hover,
+//       &.is-hovered {
+//         background-color: $background;
+//         color: $dark;
+//       }
+
+//       &.is-disabled,
+//       &[disabled] {
+//         background-color: transparent;
+//         color: $base;
+//         box-shadow: none;
+//       }
+//     }
+//   }
+// }
+
+// $button-filled-background-color: $alternate-background-medium !default;
+// $button-filled-background-color-hover: $alternate-background !default;
+// $button-filled-text-color: $text-invert !default;
+
+// .button.button-filled {
+//   border-color: $button-filled-background-color;
+//   background-color: $button-filled-background-color;
+//   color: $button-filled-text-color;
+
+//   &:hover,
+//   &.is-hovered {
+//     background-color: $button-filled-background-color-hover;
+//   }
+
+//   &.is-loading::after {
+//     @include loader;
+
+//     border-color: transparent transparent $button-filled-text-color $button-filled-text-color !important;
+//   }
+
+//   @each $name, $color-set in $colors {
+//     $base: nth($color-set, $color-index-base);
+//     $hover: nth($color-set, $color-index-hover);
+//     $active: nth($color-set, $color-index-active);
+//     $invert: nth($color-set, $color-index-invert);
+//     $background: nth($color-set, $color-index-background);
+
+//     &.button-#{$name} {
+//       border-color: $base;
+//       background-color: $base;
+//       color: $invert;
+
+//       &:hover,
+//       &.is-hovered {
+//         border-color: $hover;
+//         background-color: $hover;
+//         color: $invert;
+//       }
+
+//       &.is-loading::after {
+//         @include loader;
+
+//         border-color: transparent transparent $invert $invert !important;
+//       }
+//     }
+//   }
+// }

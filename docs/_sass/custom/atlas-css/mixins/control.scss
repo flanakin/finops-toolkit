@@ -1,0 +1,43 @@
+// $control-radius: $border-radius-sm !default;
+
+// $control-font-size: $font-size-7 !default;
+// $control-sm-font-size: $font-size-8 !default;
+// $control-lg-font-size: $font-size-6 !default;
+
+$control-border-width: 1px !default;
+
+// $control-padding-vertical: calc(0.375em - #{$control-border-width}) !default;
+// $control-padding-horizontal: calc(0.625em - #{$control-border-width}) !default;
+
+// %control {
+//   display: inline-flex;
+//   position: relative;
+//   align-items: center;
+//   justify-content: flex-start;
+//   min-height: 2.25em;
+//   padding-block: $control-padding-vertical;
+//   padding-inline: $control-padding-horizontal;
+//   border: $control-border-width solid transparent;
+//   border-radius: $control-radius;
+//   font-size: $control-font-size;
+//   line-height: 1.5;
+//   appearance: none;
+//   box-shadow: none;
+//   vertical-align: top;
+
+//   &[disabled] {
+//     cursor: not-allowed;
+//   }
+// }
+
+// @mixin control {
+//   @extend %control;
+// }
+
+// @mixin control-sm {
+//   font-size: $control-sm-font-size;
+// }
+
+// @mixin control-lg {
+//   font-size: $control-lg-font-size;
+// }
