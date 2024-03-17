@@ -1,0 +1,33 @@
+@each $item in $displays {
+  .display-#{$item} {
+    display: #{$item} !important;
+  }
+}
+
+@include tablet {
+  @each $item in $displays {
+    .display-#{$item}-tablet {
+      display: #{$item} !important;
+    }
+  }
+}
+
+@include desktop {
+  @each $item in $displays {
+    .display-#{$item}-desktop {
+      display: #{$item} !important;
+    }
+  }
+}
+
+@include widescreen {
+  @each $item in $displays {
+    .display-#{$item}-widescreen {
+      display: #{$item} !important;
+    }
+  }
+}
+
+[hidden] {
+  display: none !important;
+}

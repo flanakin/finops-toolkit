@@ -1,0 +1,10 @@
+// Custom SCSS -- See https://just-the-docs.com/docs/customization/#override-and-define-new-variables
+
+@import './atlas-css/tokens/display.scss';
+@import './atlas-css/atomics/display.scss';
+@import './components/_site-header.scss';
+
+// From layout/_universal.scss
+.header-holder {
+  flex-shrink: 0;
+}
