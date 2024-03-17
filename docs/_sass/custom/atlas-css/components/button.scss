@@ -13,7 +13,7 @@ $button-border-width: $control-border-width !default;
 // $button-border-radius: $control-radius !default;
 
 $button-padding-vertical: calc(0.375em - #{$button-border-width}) !default;
-// $button-padding-horizontal: 0.75em !default;
+$button-padding-horizontal: 0.75em !default;
 
 // $button-hover-color: $text !default;
 // $button-hover-border-color: $default-hover !default;
