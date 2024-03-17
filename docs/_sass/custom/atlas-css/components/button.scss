@@ -1,30 +1,30 @@
-// @use 'sass:map';
+@use 'sass:map';
 
-$button-color: $text !default;
-$button-background-color: $body-background !default;
+// $button-color: $text !default;
+// $button-background-color: $body-background !default;
 
-$button-lg-font-size: $font-size-6 !default;
-$button-sm-font-size: $font-size-8 !default;
+// $button-lg-font-size: $font-size-6 !default;
+// $button-sm-font-size: $font-size-8 !default;
 
-$button-icon-font-size: 0.875em !default;
+// $button-icon-font-size: 0.875em !default;
 
-$button-border-color: $text-subtle !default;
+// $button-border-color: $text-subtle !default;
 $button-border-width: $control-border-width !default;
-$button-border-radius: $control-radius !default;
+// $button-border-radius: $control-radius !default;
 
 $button-padding-vertical: calc(0.375em - #{$button-border-width}) !default;
-$button-padding-horizontal: 0.75em !default;
+// $button-padding-horizontal: 0.75em !default;
 
-$button-hover-color: $text !default;
-$button-hover-border-color: $default-hover !default;
-$button-hover-background-color: $default-hover-invert !default;
+// $button-hover-color: $text !default;
+// $button-hover-border-color: $default-hover !default;
+// $button-hover-background-color: $default-hover-invert !default;
 
-$button-disabled-background-color: $body-background-medium !default;
-$button-disabled-shadow: none !default;
-$button-disabled-opacity: 0.5 !default;
+// $button-disabled-background-color: $body-background-medium !default;
+// $button-disabled-shadow: none !default;
+// $button-disabled-opacity: 0.5 !default;
 
-$button-icon-spacing: 0.375em !default;
-$button-font-weight: $weight-semibold !default;
+// $button-icon-spacing: 0.375em !default;
+// $button-font-weight: $weight-semibold !default;
 
 // .button {
 //   @include control;

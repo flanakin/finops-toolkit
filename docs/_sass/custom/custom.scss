@@ -1,26 +1,30 @@
 // Custom SCSS -- See https://just-the-docs.com/docs/customization/#override-and-define-new-variables
 
 // No dependencies
+@import './atlas-css/tokens/border.scss';
 @import './atlas-css/tokens/breakpoints.scss';
 @import './atlas-css/tokens/display.scss';
 @import './atlas-css/tokens/focus.scss';
 @import './atlas-css/tokens/spacing.scss';
 @import './atlas-css/tokens/typography.scss';
 @import './atlas-css/tokens/z-index.scss';
+@import './atlas-css/mixins/unselectable.scss';
 @import './site-ltr.scss';
 
 // Depends on above
-@import './atlas-css/tokens/layout.scss';
+@import './atlas-css/mixins/media-queries.scss'; // Depends on breakpoints
+@import './atlas-css/tokens/layout.scss'; // Depends on breakpoints
 @import './utilities/derived-colors';
 
 // Depends on above
-@import './atlas-css/tokens/shadow.scss';
+@import './atlas-css/atomics/display.scss'; // Depends on display, media-queries
+@import './atlas-css/tokens/shadow.scss'; // Depends on site-ltr, colors, _derived-colors
 
 // Depends on above
-@import './atlas-css/mixins/control.scss';
-@import './atlas-css/atomics/display.scss';
+@import './atlas-css/mixins/control.scss'; // Depends on border, typography
 
-@import './components/site-header';
+// Depends on above
+@import './components/site-header'; // Depends on colors, shadow, spacing, typography, _derived-colors
 
 // From layout/_universal.scss
 .header-holder {
